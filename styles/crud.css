@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+#task-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-row {
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 200px;
+    font-weight: bold;
+}
+
+.form-row input, .form-row select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.right-aligned {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-aligned .form-row {
+    margin-bottom: 0;
+    justify-content: flex-start;
+}
+
+.right-aligned label {
+    width: auto;
+    margin-right: 10px;
+}
+
+.right-aligned input, .right-aligned select {
+    width: 200px;
+}
+
+button {
+    background-color: #2baf88;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #269e7a;
+}
+
+#add-new-task {
+    display: block;
+    margin: initial;
+}
+
+#sort-task {
+    margin-top: 0;
+    background-color: #3498db;
+}
+
+#sort-task:hover {
+    background-color: #2980b9;
+}
+
+.task-item {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-modal-btn {
+    background-color: #f39c12;
+}
+
+.open-modal-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.close:hover {
+    color: black;
+}
+
+mark {
+    background-color: #ffeb3b;
+    color: #000;
+    border-radius: 3px;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    color: #000;
+    border-radius: 3px;
+}

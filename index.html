@@ -7,66 +7,64 @@
         
 	</head>
     <body>
-
-        <body>
-            <h1>TASK-master</h1>
-            <h2>To-do list</h2>
-        
-            <form id="task-form">
-                <div class="right-aligned">
-                    <div class="form-row">
-                        <label for="taskSearchInput">Search task:</label>
-                        <input type="text" id="taskSearchInput" placeholder="Search...">
-                    </div>
-                    
-                    <div class="form-row">
-                        <label for="sortForm">Search by:</label>
-                        <select id="sortForm" name="sortForm"></select>
-                        <button type="submit" id="sort-task">Sort</button>
-                    </div>
+        <h1>TASK-master</h1>
+        <h2>To-do list</h2>
+    
+        <form id="task-form">
+            <div class="right-aligned">
+                <div class="form-row">
+                    <label for="taskSearchInput">Search task:</label>
+                    <input type="text" id="taskSearchInput" placeholder="Search...">
                 </div>
                 
                 <div class="form-row">
-                    <label for="name">Task name:</label>
-                    <input type="text" id="name" placeholder="Task name" autocomplete="off" required>
-                </div>
-        
-                <div class="form-row">
-                    <label for="deadline">Deadline:</label>
-                    <input type="date" id="deadline" required>
-                </div>
-        
-                <div class="form-row">
-                    <label for="importantce">Importance status:</label>
-                    <select id="importantce" name="importantce" required></select>
-                </div>
-        
-                <button type="submit" id="add-new-task">Add task +</button>
-            </form>
-        
-            <div class="new-task-list">
-                <ul id="task-list"></ul>
-            </div>
-        
-            <div class="modal" id="editModal">
-                <div class="modal-content">
-                    <h2>Edit TASK-master</h2>
-                    <span class="close">&times;</span>
-                    <form id="edit-form">
-                        <label for="nameNew">New task name:</label>
-                        <input type="text" id="nameNew" placeholder="New task name" required><br>
-        
-                        <label for="deadlineNew">New deadline:</label>
-                        <input type="date" id="deadlineNew" required><br>
-        
-                        <label for="importantceNew">New importance status:</label>
-                        <select id="importantceNew" name="importantceNew" required></select>
-        
-                        <button type="submit" id="save-edit">Save</button>
-                        <button type="button" id="cancel-edit">Cancel</button>
-                    </form>
+                    <label for="sortForm">Search by:</label>
+                    <select id="sortForm" name="sortForm"></select>
+                    <button type="submit" id="sort-task">Sort</button>
                 </div>
             </div>
+            
+            <div class="form-row">
+                <label for="name">Task name:</label>
+                <input type="text" id="name" placeholder="Task name" autocomplete="off" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="importantce">Importance status:</label>
+                <select id="importantce" name="importantce" required></select>
+            </div>
+    
+            <button type="submit" id="add-new-task">Add task +</button>
+        </form>
+    
+        <div class="new-task-list">
+            <ul id="task-list"></ul>
+        </div>
+    
+        <div class="modal" id="editModal">
+            <div class="modal-content">
+                <h2>Edit TASK-master</h2>
+                <span class="close">&times;</span>
+                <form id="edit-form">
+                    <label for="nameNew">New task name:</label>
+                    <input type="text" id="nameNew" placeholder="New task name" required><br>
+    
+                    <label for="deadlineNew">New deadline:</label>
+                    <input type="date" id="deadlineNew" required><br>
+    
+                    <label for="importantceNew">New importance status:</label>
+                    <select id="importantceNew" name="importantceNew" required></select>
+    
+                    <button type="submit" id="save-edit">Save</button>
+                    <button type="button" id="cancel-edit">Cancel</button>
+                </form>
+            </div>
+        </div>
 
         <script src="js/crud.js"></script>
     </body>
